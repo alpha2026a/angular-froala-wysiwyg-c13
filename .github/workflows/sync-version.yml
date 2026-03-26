@@ -1,4 +1,4 @@
-name: Sync Version – vue SDK
+name: Sync Version – angular SDK
 
 on:
  repository_dispatch:
