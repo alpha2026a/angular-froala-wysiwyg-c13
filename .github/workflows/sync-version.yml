@@ -69,7 +69,6 @@ jobs:
          
      - name: Update package.json and ./projects/library/package.json
        run: |
-         - name: Update package.json file
             jq --arg VERSION "$VERSION" '.version = $VERSION | .dependencies["froala-editor"] = $VERSION' package.json > tmp.json && mv tmp.json package.json
             
             jq --arg VERSION "$VERSION" '.version = $VERSION | .dependencies["froala-editor"] = $VERSION' ./projects/library/package.json > tmp.json && mv tmp.json ./projects/library/package.json
